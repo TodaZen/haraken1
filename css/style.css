@@ -1,0 +1,142 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.body{
+  font-family: "Sawarabi Gothic";
+  background-color: #ffc107;
+  font-size: 20% #ffffff;
+  font-size: 16px;
+ }
+ .brand-logo{
+  font-size: 40%;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #000000fd;
+ }
+ .nav-extended{
+  background-color: #ffc107;
+ }
+ .nav-wrapper{
+  background-color: #ffc107;
+ }
+ .nav-content{
+  background-color: linear-gradient(#ffc342,#ffffff);
+ }
+ .tab{
+  background-color:#ffc342; ;
+ 
+  border-bottom: 2px #000000 solid;
+  border-right:2px #000000 solid ;
+  font-size: 50%;
+  color:#000000;
+ }
+
+ .tabs .tab a.active {
+  background-color: #ff9100; /* アクティブなタブの背景色 */
+  color: white; /* 文字色 */
+  border-radius: 4px; /* 角を丸く */
+}
+
+.tabs .tab a:hover {
+  background-color: #ff7b00; /* ホバー時の背景色 */
+  color: white;
+}
+ 
+ .container{
+  width: 100%;
+  
+  background-color: #ffffff;
+ }
+/* mainエリア */
+main {
+  max-width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+main h1{
+  font-size: 3em;
+}
+
+ .content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* アイテムを横に広げて配置 */
+  gap: 10px; /* アイテム間の隙間 */
+}
+
+/* コンテンツリストのスタイル */
+ul.content-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+
+/* 各アイテムのスタイル */
+.content-item {
+  width: calc(20% - 10px); /* 3列に分ける（各アイテムの幅） */
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden; /* アイテム内のコンテンツがはみ出さないようにする */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* リンクタグ（a）のスタイル */
+.content-item a {
+  display: block; /* <a>タグをブロック表示にして全体をリンクに */
+  text-decoration: none; /* デフォルトの下線を消す */
+  color: inherit; /* 親の色を引き継ぐ */
+}
+
+/* コンテンツアイテムにホバー時のアニメーション */
+.content-item:hover {
+  transform: translateY(-5px); /* 浮き上がる効果 */
+  box-shadow: 0 8px 12px #ffc342; /* シャドウを強調 */
+}
+
+/* 画像のスタイル */
+.content-item img {
+  width: 100%; /* 画像の幅を親要素に合わせて100% */
+  height: auto; /* 高さを自動調整 */
+  object-fit: cover; 
+}
+
+/* 説明文のスタイル */
+.content-item .description {
+  padding: 1em;
+  font-size: 1em;
+  color: #333;
+  text-align: center;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .content-item {
+    width: calc(50% - 10px); /* タブレットの場合、2列に変更 */
+  }
+}
+
+@media (max-width: 480px) {
+  .content-item {
+    width: 100%; /* スマートフォンの場合、1列に変更 */
+  }
+}
