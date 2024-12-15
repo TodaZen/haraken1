@@ -14,9 +14,15 @@
 }
 .body{
   font-family: "Sawarabi Gothic";
-  background-color: #ffc107;
-  font-size: 20% #ffffff;
-  font-size: 16px;
+  max-width: 100%;
+  max-height: auto ;
+  font-size: 18px #000000;
+ }
+ .contener{
+  background-color: #fcf1db;
+ 
+ max-width: 100%;
+  
  }
  .brand-logo{
   font-size: 40%;
@@ -27,6 +33,7 @@
  }
  .nav-extended{
   background-color: #ffc107;
+  margin-bottom: 0;
  }
  .nav-wrapper{
   background-color: #ffc107;
@@ -56,23 +63,45 @@
  
  .container{
   width: 100%;
-  
+  font-size: 18px;
   background-color: #ffffff;
  }
+
 /* mainエリア */
 main {
+  font-size: 18px #000000;
   max-width: 80%;
-  margin: 40px auto;
+  max-height: 80%;
+  margin: 0 auto;
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 main h1{
-  font-size: 3em;
+  font-size: 48px;
+  background-color: #ffde98e7;
+  border-bottom: solid 2px #ff7b00;
+  width:100%;
+  text-shadow: 2px 2px 5px rgba(240, 240, 240, 0.3);
+      border-radius: 10px;
+}
+main h3{
+  font-size: 36px;
+
+  width:70%;
+  text-shadow: 2px 2px 5px rgba(240, 240, 240, 0.3);
+      
+      border-bottom: solid 2px #ff7b00;
+}
+.fontsize{
+  font-size: 1.3em;
 }
 
+
  .content-wrapper {
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; /* アイテムを横に広げて配置 */
@@ -81,6 +110,7 @@ main h1{
 
 /* コンテンツリストのスタイル */
 ul.content-list {
+  
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -94,6 +124,7 @@ ul.content-list {
   width: calc(20% - 10px); /* 3列に分ける（各アイテムの幅） */
   margin-bottom: 10px;
   background-color: #f9f9f9;
+  border: #ffc34225 2px solid;
   border-radius: 8px;
   overflow: hidden; /* アイテム内のコンテンツがはみ出さないようにする */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -102,9 +133,11 @@ ul.content-list {
 
 /* リンクタグ（a）のスタイル */
 .content-item a {
-  display: block; /* <a>タグをブロック表示にして全体をリンクに */
+  display: flex;
+  flex-direction: column; /* <a>タグをブロック表示にして全体をリンクに */
   text-decoration: none; /* デフォルトの下線を消す */
   color: inherit; /* 親の色を引き継ぐ */
+  
 }
 
 /* コンテンツアイテムにホバー時のアニメーション */
@@ -122,11 +155,20 @@ ul.content-list {
 
 /* 説明文のスタイル */
 .content-item .description {
+  height: 100%;
   padding: 1em;
   font-size: 1em;
   color: #333;
   text-align: center;
 }
+.content-item .label {
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明の黒い背景 */
+  color: white; /* テキストの色を白に */
+  padding: 0.1em; /* 内側の余白 */
+  text-align: center; /* テキストを中央揃え */
+   /* 太字 */
+}
+
 
 /* レスポンシブデザイン */
 @media (max-width: 768px) {

@@ -9,10 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
   <nav class="nav-extended">
@@ -35,6 +36,7 @@
         
       </ul>
     </div>
+  
   </nav>
 
   <ul class="sidenav" id="mobile-demo">
@@ -44,61 +46,73 @@
   </ul>
  
  
- 
-  <main>  
-    <h1>このサイトについて</h1>
-    <p>このサイトは本当に分かりやすいストリートファイター6の解説を目指して作成しています。</p>
-    <p>このサイトさえあれば本当に「誰でも」このゲームについて理解できます。世の中には、初心者向けを謳っておきながらあまりにも経験者向けすぎる解説が山ほどあります。</p>
-    <p>あまりにも経験者向けすぎる解説が山ほどあります。ですがここではそんなことはさせません。本当に0からストリートファイター6を解説して、いくので、ぜひ読んでいってください。</p>
-  
+ <div class="contener">
+  <main>
+     
+    <h1> <i class="small material-icons">check</i>このサイトについて</h1>
+    <div class="fontsize">
+      <p>このサイトは、本当に分かりやすいストリートファイター6の解説を目指して作成しています。</p>
+      <p>このサイトさえあれば本当に「誰でも」このゲームについてわかりやすく理解できます。<br>世の中には、初心者向けを謳っておきながらあまりにも経験者向けすぎる解説が山ほどあります。</p>
+      <p>ここではそんなことはさせません。本当に0からストリートファイター6をわかりやすく解説し、あなたを必ずマスターランクまで連れていくので、ぜひ活用してください。</p>
+    </div>
 
    
     
-    <h2>キホン編</h2>
-    <p>ここでは、ストリートファイター6の基本知識を解説します。</p>
-
-    <p>格闘ゲームとは何か・ストリートファイター6とは何かを知ることができます。</p>
+    <h3>キホン編</h3>
+    <p></p>
+      <div class="fontsize">
+      <p>ここでは、ストリートファイター6の基本知識を解説します。</p>
+      <p>格闘ゲームとは何か・ストリートファイター6とは何かを知ることができます。</p>
+      <p></p>
+  </div>
     <div class="content-wrapper">
       <ul class="content-list">
         <li class="content-item">
-          <a href="https://example.com/1">
-            <img src="https://via.placeholder.com/300" alt="コンテンツ1">
-            <p class="description">これはコンテンツ1の説明文です。</p>
+          <a href="topic/kihon1.html">
+            <img src="image/kihon.jpg" alt="コンテンツ1">
+            <div class="label">【其の０】このゲームでできること</div> 
+            <p class="description">このゲームの基本操作やルール、　４つの基本行動を解説します。</p>
+            
           </a>
         </li>
         <li class="content-item">
           <a href="https://example.com/2">
-            <img src="https://via.placeholder.com/300" alt="コンテンツ2">
-            <p class="description">これはコンテンツ2の説明文です。</p>
+            <img src="image/attacksam.jpg" alt="コンテンツ2">
+            <div class="label">【其の１】攻撃</div> 
+            <p class="description">４つの基本行動のうちの１つ、攻撃について詳しく解説します。</p>
           </a>
         </li>
         <li class="content-item">
           <a href="https://example.com/3">
             <img src="https://via.placeholder.com/300" alt="コンテンツ3">
-            <p class="description">これはコンテンツ3の説明文です。</p>
+            <div class="label">【その0】</div> 
+            <p class="description"></p>
           </a>
         </li>
         <li class="content-item">
           <a href="https://example.com/4">
             <img src="https://via.placeholder.com/300" alt="コンテンツ4">
-            <p class="description">これはコンテンツ4の説明文です。</p>
-          </a>
+            <div class="label">【その０】</div> 
+            <p class="description"></p>
         </li>
         <li class="content-item">
           <a href="https://example.com/5">
             <img src="https://via.placeholder.com/300" alt="コンテンツ5">
-            <p class="description">これはコンテンツ5の説明文です。</p>
-          </a>
+            <div class="label">【その０】</div> 
+            <p class="description"></p>
+            </a>
         </li>
         <li class="content-item">
           <a href="https://example.com/6">
             <img src="https://via.placeholder.com/300" alt="コンテンツ6">
-            <p class="description">これはコンテンツ6の説明文です。</p>
+            <div class="label">【その０】</div> 
+            <p class="description"></p>
           </a>
         </li>
       </ul>
     </div>
   </main>
+</div>
   <script src="script.js"></script>
 
 
@@ -110,8 +124,8 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="black-text">Footer Content</h5>
-          <p class="black-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          <h5 class="black-text">最終更新日　2024/12/14</h5>
+          <p class="black-text text-lighten-4"></p>
         </div>
         <div class="col l4 offset-l2 s12">
           <h5 class="black-text">Links</h5>
